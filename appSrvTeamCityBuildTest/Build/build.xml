@@ -13,29 +13,31 @@
 			<arg value="${appname}"/>
 			<arg value="-deployAsSource"/>
 		</exec>
-	<!--	<echo message="Bar builded..."/>
+		<!--	<echo message="Bar builded..."/>-->
 	<echo message="Applying bar overrides..."/>
-		<exec executable="./baroverride.bat">
+	<exec executable="cmd">
+			<arg value="baroverride.bat"/>
 			<arg value="${bar.name}"/>
 			<arg value="${properties}"/>
 		</exec>
-		<echo message="Bar ovverriden..."/> -->
-		
-		
+	<!--	<exec executable="./baroverride.bat">
+			<arg value="${bar.name}"/>
+			<arg value="${properties}"/>
+		</exec> -->
+		<echo message="Bar ovverriden..."/>
 		<!--<echo message="Deploying bar..."/>
 		<exec executable="deploycmd.bat">
 			<arg value="${iib.broker}"/>
 			<arg value="${iib.server}"/>
 			<arg value="${bar.name}"/>
 		</exec>-->
-		
 		<echo message="Deploying bar..."/>
-		  <exec executable="cmd">
-    <arg value="deploycmd.bat"/>
-	<arg value="${iib.broker}"/>
+		<exec executable="cmd">
+			<arg value="deploycmd.bat"/>
+			<arg value="${iib.broker}"/>
 			<arg value="${iib.server}"/>
 			<arg value="${bar.name}"/>
-  </exec>
+		</exec>
 		<!--<echo message="Deploying bar..."/>
 		<exec executable="${iib.path}/mqsiprofile.cmd"/>
 		<exec executable="${iib.path}/mqsideploy">
