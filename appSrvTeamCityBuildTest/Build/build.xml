@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project name="teamcity-build" default="build">
 	<property file="build.properties"/>
-	<property name="datadir" value="../../"/>
+	<property name="datadir" value=""/>
 	<target name="build">
 		<echo message="Building bar..."/>
 		<exec executable="${iib.toolkit}/mqsicreatebar">
