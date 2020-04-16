@@ -26,7 +26,7 @@
 			<arg line="'${iib.path}/mqsideploy' ${iib.broker} '-e' ${iib.server} '-a' ${bar.name}"/>
 		</exec> -->
 		
-		 <exec executable="cmd" >
+		<exec executable="cmd" >
         <arg value="-c"/>
         <arg value="${iib.path}/mqsiprofile.cmd;${iib.path}/mqsideploy' ${iib.broker} '-e' ${iib.server} '-a' ${bar.name}"/>
         </exec>
