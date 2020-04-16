@@ -4,7 +4,7 @@
 	<property name="datadir" value="../../"/>
 	<target name="build">
 		<echo message="Building bar..."/>
-		<exec executable="${lib.toolkit}/mqsicreatebar">
+		<exec executable="${iib.toolkit}/mqsicreatebar">
 			<arg value="-data"/>
 			<arg value="${datadir}"/>
 			<arg value="-b"/>
@@ -22,8 +22,8 @@
 		<echo message="Bar ovverriden..."/>
 		<echo message="Deploying bar..."/>
 		<exec executable="deploycmd.bat">
-			<arg value="${lib.broker}"/>
-			<arg value="${lib.server}"/>
+			<arg value="${iib.broker}"/>
+			<arg value="${iib.server}"/>
 			<arg value="${bar.name}"/>
 		</exec>
 		<echo message="Bar file deployed..."/>
