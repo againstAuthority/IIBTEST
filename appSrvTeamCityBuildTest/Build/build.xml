@@ -29,12 +29,9 @@
 		<echo message="Bar ovverriden..."/>
 		
 		<echo message="Deploying bar..."/>
-		<!--<exec executable="${iib.path}/mqsiprofile.cmd">
-			<arg line="'${iib.path}/mqsideploy' ${iib.broker} '-e' ${iib.server} '-a' ${bar.name}"/>
-		</exec> -->
 		<exec executable="cmd">
           <arg file="${iib.path}/mqsiprofile.cmd">
-           <arg value="'&&"/>
+           <arg value="'&&'"/>
            <arg value="${iib.path}/mqsideploy"/>
            <arg value="${iib.broker}"/>
            <arg value="-e"/>
