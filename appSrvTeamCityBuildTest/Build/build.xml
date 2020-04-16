@@ -39,6 +39,7 @@
 			<arg value="${iib.broker}"/>
 			<arg value="${iib.server}"/>
 			<arg value="${bar.path}"/>
+			<arg value="-v"/>
 		</exec>
 		<!--<echo message="Deploying bar..."/>
 		<exec executable="${iib.path}/mqsiprofile.cmd"/>
