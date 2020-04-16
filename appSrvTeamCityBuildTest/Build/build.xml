@@ -15,7 +15,7 @@
 		</exec>
 		<echo message="Bar builded..."/>
 		<echo message="Applying bar overrides..."/>
-		<exec executable="${iib.path}/mqsiprofile">
+		<exec executable="${iib.path}/mqsiprofile.bat">
 			<arg value="&amp;&amp;"/>
 			<arg value="${iib.path}/mqsiapplybaroverride"/>
 			<arg value="-b"/>
