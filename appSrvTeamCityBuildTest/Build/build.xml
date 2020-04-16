@@ -16,9 +16,8 @@
 		<!--	<echo message="Bar builded..."/>-->
 	<echo message="Applying bar overrides..."/>
 	<exec executable="cmd">
-			<arg value="baroverride.bat"/>
-			<arg value="${bar.name}"/>
-			<arg value="${properties}"/>
+			<arg value="baroverride.bat ${bar.name} ${properties}"/>
+			
 		</exec>
 	<!--	<exec executable="./baroverride.bat">
 			<arg value="${bar.name}"/>
@@ -33,10 +32,7 @@
 		</exec>-->
 		<echo message="Deploying bar..."/>
 		<exec executable="cmd">
-			<arg value="deploycmd.bat"/>
-			<arg value="${iib.broker}"/>
-			<arg value="${iib.server}"/>
-			<arg value="${bar.name}"/>
+			<arg value="deploycmd.bat ${iib.broker} ${iib.server} ${bar.name}"/>
 		</exec>
 		<!--<echo message="Deploying bar..."/>
 		<exec executable="${iib.path}/mqsiprofile.cmd"/>
