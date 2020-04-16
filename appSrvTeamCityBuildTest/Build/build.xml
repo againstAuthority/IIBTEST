@@ -13,17 +13,19 @@
 			<arg value="${appname}"/>
 			<arg value="-deployAsSource"/>
 		</exec>
-		<echo message="Bar builded..."/>
+	<!--	<echo message="Bar builded..."/>
 	<echo message="Applying bar overrides..."/>
 		<exec executable="./baroverride.bat">
 			<arg value="${bar.name}"/>
 			<arg value="${properties}"/>
 		</exec>
-		<echo message="Bar ovverriden..."/>
+		<echo message="Bar ovverriden..."/> -->
 		<echo message="Deploying bar..."/>
-		<exec executable="./deploycmd.bat">
+		<exec executable="${iib.toolkit}/mqsideploy">
 			<arg value="${iib.broker}"/>
+			<arg value="-e"/>
 			<arg value="${iib.server}"/>
+			<arg value="-a"/>
 			<arg value="${bar.name}"/>
 		</exec>
 		<echo message="Bar file deployed..."/>
