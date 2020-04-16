@@ -21,7 +21,7 @@
 		</exec>
 		<echo message="Bar ovverriden..."/> --> 
 		<echo message="Deploying bar..."/>
-		<exec executable="appSrvTeamCityBuildTest/Build/deploycmd.bat">
+		<exec executable="deploycmd.bat">
 			<arg value="${iib.broker}"/>
 			<arg value="${iib.server}"/>
 			<arg value="${bar.name}"/>
