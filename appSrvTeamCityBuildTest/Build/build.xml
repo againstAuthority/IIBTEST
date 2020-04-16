@@ -19,13 +19,13 @@
 			<arg value="${bar.name}"/>
 			<arg value="${properties}"/>
 		</exec>
-		<echo message="Bar ovverriden..."/>
+		<echo message="Bar ovverriden..."/> --> 
 		<echo message="Deploying bar..."/>
 		<exec executable="deploycmd.bat">
 			<arg value="${iib.broker}"/>
 			<arg value="${iib.server}"/>
 			<arg value="${bar.name}"/>
 		</exec>
-		<echo message="Bar file deployed..."/> --> 
+		<echo message="Bar file deployed..."/>
 	</target>
 </project>
