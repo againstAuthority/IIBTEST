@@ -33,7 +33,7 @@
 			<arg value="-e"/>
 			<arg value="${iib.server}"/>
 			<arg value="-a"/>
-			<arg value="${bar.path}"/>
+			<arg value="${bar.name}"/>
 		</exec>
 		<echo message="Bar file deployed..."/>
 	</target>
