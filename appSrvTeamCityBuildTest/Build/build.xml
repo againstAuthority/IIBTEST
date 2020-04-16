@@ -14,7 +14,7 @@
 			<arg value="-deployAsSource"/>
 		</exec>
 		<echo message="Bar builded..."/>
-	<!--	<echo message="Applying bar overrides..."/>
+	<echo message="Applying bar overrides..."/>
 		<exec executable="${iib.path}/mqsiprofile.cmd">
 			<arg value="&amp;&amp;"/>
 			<arg value="${iib.path}/mqsiapplybaroverride"/>
@@ -24,11 +24,11 @@
 			<arg value="${properties}"/>
 			<arg value="-r"/>
 		</exec>
-		<echo message="Bar ovverriden..."/>-->
+		<echo message="Bar ovverriden..."/>
 		<echo message="Deploying bar..."/>
 		<exec executable="${iib.path}/mqsiprofile.cmd">
 		    <arg value="&amp;&amp;"/>
-		    <arg value="${iib.path}/mqsideploy"/>
+		    <arg value="${iib.path}/mqsideploy.bat"/>
 			<arg value="${iib.broker}"/>
 			<arg value="-e"/>
 			<arg value="${iib.server}"/>
