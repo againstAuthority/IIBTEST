@@ -31,9 +31,10 @@
 		
 		<echo message="Deploying bar..."/>
 		  <exec executable="cmd">
-    <arg value="/c"/>
     <arg value="deploycmd.bat"/>
-    <arg value="-p"/>
+	<arg value="${iib.broker}"/>
+			<arg value="${iib.server}"/>
+			<arg value="${bar.name}"/>
   </exec>
 		<!--<echo message="Deploying bar..."/>
 		<exec executable="${iib.path}/mqsiprofile.cmd"/>
