@@ -40,12 +40,7 @@
 		
 		<echo message="Deploying bar..."/>
 		<exec executable="${iib.path}/mqsiprofile.cmd"/>
-		<exec executable="${iib.path}/mqsideploy">
-			<arg value="${iib.broker}"/>
-			<arg value="-e"/>
-			<arg value="${iib.server}"/>
-			<arg value="-a"/>
-			<arg value="${bar.name}"/>
+		<arg line="'${iib.path}/mqsideploy' ${iib.broker} '-e' ${iib.server} '-a' ${bar.name}"/>
 		</exec>
 		<echo message="Bar file deployed..."/>
 	</target>
