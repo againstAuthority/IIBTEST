@@ -21,6 +21,7 @@
 		</exec>
 		<echo message="Bar ovverriden..."/> -->
 		<echo message="Deploying bar..."/>
+		<exec executable="${iib.path}/mqsiprofile.cmd"/>
 		<exec executable="${iib.path}/mqsideploy">
 			<arg value="${iib.broker}"/>
 			<arg value="-e"/>
