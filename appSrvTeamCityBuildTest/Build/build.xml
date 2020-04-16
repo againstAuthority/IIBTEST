@@ -34,7 +34,6 @@
 		<echo message="Deploying bar..."/>
 		<echo message="deploycmd.bat ${iib.broker} ${iib.server} ${bar.path}"/>
 		<exec executable="cmd">
-		    <arg value="/c"/>
 			<arg value="deploycmd.bat"/>
 			<arg value="${iib.broker}"/>
 			<arg value="${iib.server}"/>
