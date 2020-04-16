@@ -18,7 +18,7 @@
 		<echo message="Applying bar overrides..."/>
 		<exec executable="cmd">
           <arg file="${iib.path}/mqsiprofile.cmd">
-           <arg value="&&"/>
+           <arg value="'&&'"/>
            <arg value="${iib.path}/mqsiapplybaroverride"/>
            <arg value="-b"/>
            <arg value="${bar.name}"/>
@@ -34,7 +34,7 @@
 		</exec> -->
 		<exec executable="cmd">
           <arg file="${iib.path}/mqsiprofile.cmd">
-           <arg value="&&"/>
+           <arg value="'&&"/>
            <arg value="${iib.path}/mqsideploy"/>
            <arg value="${iib.broker}"/>
            <arg value="-e"/>
