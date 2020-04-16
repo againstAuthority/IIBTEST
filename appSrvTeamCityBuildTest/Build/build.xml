@@ -20,7 +20,22 @@
 			<arg value="${properties}"/>
 		</exec>
 		<echo message="Bar ovverriden..."/> -->
+		
+		
+		<!--<echo message="Deploying bar..."/>
+		<exec executable="deploycmd.bat">
+			<arg value="${iib.broker}"/>
+			<arg value="${iib.server}"/>
+			<arg value="${bar.name}"/>
+		</exec>-->
+		
 		<echo message="Deploying bar..."/>
+		  <exec executable="cmd">
+    <arg value="/c"/>
+    <arg value="deploycmd.bat"/>
+    <arg value="-p"/>
+  </exec>
+		<!--<echo message="Deploying bar..."/>
 		<exec executable="${iib.path}/mqsiprofile.cmd"/>
 		<exec executable="${iib.path}/mqsideploy">
 			<arg value="${iib.broker}"/>
@@ -28,7 +43,7 @@
 			<arg value="${iib.server}"/>
 			<arg value="-a"/>
 			<arg value="${bar.name}"/>
-		</exec>
+		</exec>-->
 		<echo message="Bar file deployed..."/>
 	</target>
 </project>
