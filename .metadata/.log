@@ -1,0 +1,46 @@
+!SESSION 2020-04-16 14:53:40.773 -----------------------------------------------
+eclipse.buildId=4.2.2.M20140918-1444
+java.fullversion=8.0.5.15 - pwa6480sr5fp15-20180502_01(SR5 FP15)
+JRE 1.8.0 Windows 10 amd64-64 Compressed References 20180425_385365 (JIT enabled, AOT enabled)
+OpenJ9   - a7ffbfe
+OMR      - a531219
+IBM      - 59ef3dc
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=ru_RU
+Framework arguments:  -showlocation -product com.ibm.etools.msgbroker.tooling.ide tools_auto -showlocation -product com.ibm.etools.msgbroker.tooling.ide
+Command-line arguments:  -data C:\Users\krote\Documents\GitHub\iib -os win32 -ws win32 -arch x86_64 -showlocation -product com.ibm.etools.msgbroker.tooling.ide tools_auto -showlocation -product com.ibm.etools.msgbroker.tooling.ide
+
+!ENTRY org.eclipse.emf.ecore 2 0 2020-04-16 14:53:42.777
+!MESSAGE Both 'com.ibm.etools.javaee.core' and 'com.ibm.etools.mft.service.model' register an extension parser for 'application'
+
+!ENTRY org.eclipse.ui 2 2 2020-04-16 14:53:44.997
+!MESSAGE Invalid preference category path: com.ibm.importer.preferences (bundle: com.ibm.adapter.c, page: com.ibm.adapter.c.ui.preferencepage.CPreferencePage)
+
+!ENTRY org.eclipse.ui 2 2 2020-04-16 14:53:45.000
+!MESSAGE Invalid preference category path: com.ibm.debug.breakpoints.common.pref.tracepoint (bundle: com.ibm.debug.wsa, page: com.ibm.debug.wsa.WSATracepointPreferencePage)
+
+!ENTRY org.eclipse.ui 2 2 2020-04-16 14:53:45.001
+!MESSAGE Invalid preference category path: com.ibm.importer.preferences (bundle: com.ibm.etools.cobol.preference.ui, page: com.ibm.etools.cobol.preference.ui.preferencepage.CobolPreferencePage)
+
+!ENTRY org.eclipse.osgi 2 1 2020-04-16 14:53:45.581
+!MESSAGE NLS missing message: overrideSavedTrustStorePasswordDialogTitle in: com.ibm.etools.mft.broker.runtime.messages
+
+!ENTRY org.eclipse.osgi 2 1 2020-04-16 14:53:45.583
+!MESSAGE NLS missing message: overrideSavedTrustStorePasswordDialogDescription in: com.ibm.etools.mft.broker.runtime.messages
+
+!ENTRY com.ibm.mq.runtime 1 0 2020-04-16 14:53:46.605
+!MESSAGE 
+
+!ENTRY com.ibm.mq.runtime 1 0 2020-04-16 14:53:46.606
+!MESSAGE C:\Program Files\IBM\IIB\10.0.0.13\tools>mqsifindmqpath
+
+!ENTRY com.ibm.etools.mft.pattern.community 4 0 2020-04-16 14:53:46.768
+!MESSAGE Connection to the URL http://ot4i.github.io/iib-patterns/ru/repo_metadata.json failed. Response code: 404
+
+!ENTRY com.ibm.mq.runtime 1 0 2020-04-16 14:53:47.010
+!MESSAGE BIP8071I: Успешное завершение команды. C:\Program Files (x86)\IBM\WebSphere MQ
+
+!ENTRY com.ibm.mq.runtime 1 0 2020-04-16 14:53:47.011
+!MESSAGE MQ Install location found:C:/Program Files (x86)/IBM/WebSphere MQ
+
+!ENTRY com.ibm.mq.runtime 1 0 2020-04-16 14:53:47.012
+!MESSAGE 

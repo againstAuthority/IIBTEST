@@ -14,7 +14,7 @@
 			<arg value="-deployAsSource"/>
 		</exec>
 		<echo message="Bar builded..."/>
-		<echo message="Applying bar overrides..."/>
+	<!--	<echo message="Applying bar overrides..."/>
 		<exec executable="baroverride.bat">
 			<arg value="${bar.name}"/>
 			<arg value="${properties}"/>
@@ -26,6 +26,6 @@
 			<arg value="${iib.server}"/>
 			<arg value="${bar.name}"/>
 		</exec>
-		<echo message="Bar file deployed..."/>
+		<echo message="Bar file deployed..."/> --> 
 	</target>
 </project>
