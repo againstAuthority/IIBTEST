@@ -31,15 +31,15 @@
 			<arg value="${iib.server}"/>
 			<arg value="${bar.name}"/>
 		</exec>-->
+		
+		
 		<echo message="Deploying bar..."/>
 		<echo message="deploycmd.bat ${iib.broker} ${iib.server} ${bar.path}"/>
-		<exec executable="cmd">
-			<arg value="deploycmd.bat"/>
-			<arg value="${iib.broker}"/>
-			<arg value="${iib.server}"/>
-			<arg value="${bar.path}"/>
-			<arg value="-v"/>
-		</exec>
+	
+		<exec executable="cmd" os="Windows NT">
+          <arg line="/c deploycmd.bat ${iib.broker} ${iib.server} ${bar.path}"/>
+        </exec>
+		
 		<!--<echo message="Deploying bar..."/>
 		<exec executable="${iib.path}/mqsiprofile.cmd"/>
 		<exec executable="${iib.path}/mqsideploy">
