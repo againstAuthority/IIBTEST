@@ -13,34 +13,17 @@
 			<arg value="${appname}"/>
 			<arg value="-deployAsSource"/>
 		</exec>
-		<!--	<echo message="Bar builded..."/>-->
-	<echo message="Applying bar overrides..."/>
-	<exec executable="cmd">
+		<echo message="Bar builded..."/>
+		<echo message="Applying bar overrides..."/>
+		<exec executable="cmd">
 			<arg value="baroverride.bat"/>
 			<arg value="${bar.name}"/>
 			<arg value="${properties}"/>
 		</exec>
-	<!--	<exec executable="./baroverride.bat">
-			<arg value="${bar.name}"/>
-			<arg value="${properties}"/>
-		</exec> -->
 		<echo message="Bar ovverriden..."/>
-		<!--<echo message="Deploying bar..."/>
-		<exec executable="deploycmd.bat">
-			<arg value="${iib.broker}"/>
-			<arg value="${iib.server}"/>
-			<arg value="${bar.name}"/>
-		</exec>
-		
-		
-		<!--<echo message="Deploying bar..."/>
-		 <exec dir="." executable="cmd" >
-          <arg line="/c deploycmd.bat ${iib.broker} ${iib.server} ${bar.name}"/>
-        </exec>-->
-		
 		<echo message="Deploying bar..."/>
 		<exec executable="${iib.path}/mqsiprofile.cmd">
-		<arg line="'${iib.path}/mqsideploy' ${iib.broker} '-e' ${iib.server} '-a' ${bar.name}"/>
+			<arg line="'${iib.path}/mqsideploy' ${iib.broker} '-e' ${iib.server} '-a' ${bar.name}"/>
 		</exec>
 		<echo message="Bar file deployed..."/>
 	</target>
