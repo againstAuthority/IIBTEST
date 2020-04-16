@@ -14,12 +14,12 @@
 			<arg value="-deployAsSource"/>
 		</exec>
 		<echo message="Bar builded..."/>
-	<!--	<echo message="Applying bar overrides..."/>
+	<echo message="Applying bar overrides..."/>
 		<exec executable="baroverride.bat">
 			<arg value="${bar.name}"/>
 			<arg value="${properties}"/>
 		</exec>
-		<echo message="Bar ovverriden..."/> --> 
+		<echo message="Bar ovverriden..."/>
 		<echo message="Deploying bar..."/>
 		<exec executable="deploycmd.bat">
 			<arg value="${iib.broker}"/>
