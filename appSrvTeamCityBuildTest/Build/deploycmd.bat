@@ -1,3 +1,3 @@
-@echo off
+@echo on
 CALL mqsiprofile.cmd
 CALL mqsideploy.exe %1 -e %2 -a %3
