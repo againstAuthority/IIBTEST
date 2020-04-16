@@ -21,10 +21,15 @@
 			<arg value="${properties}"/>
 		</exec>
 		<echo message="Bar ovverriden..."/>
-		<echo message="Deploying bar..."/>
+	<!--	<echo message="Deploying bar..."/>
 		<exec executable="${iib.path}/mqsiprofile.cmd">
 			<arg line="'${iib.path}/mqsideploy' ${iib.broker} '-e' ${iib.server} '-a' ${bar.name}"/>
-		</exec>
+		</exec>-->
+		
+		 <exec executable="cmd" >
+        <arg value="-c"/>
+        <arg value="${iib.path}/mqsiprofile.cmd;${iib.path}/mqsideploy' ${iib.broker} '-e' ${iib.server} '-a' ${bar.name}"/>
+        </exec>
 		<echo message="Bar file deployed..."/>
 	</target>
 </project>
